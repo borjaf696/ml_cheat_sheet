@@ -12,6 +12,8 @@ knitr::opts_chunk$set(echo = TRUE)
 library(rpart)
 library(rpart.plot)
 library(kableExtra)
+library(infotheo)
+library(InformationValue)
 ```
 
 ##### Exercise 1
@@ -71,6 +73,16 @@ By looking at the tree we can say that send messages to:
 * In areas - Global, Oncology, Ophthalmology or Else
 
 Can be a good sales movement since people with this profile represent the 37% of our total sample and the probability of getting a read is around 0.51 which is 0.50.
+
+```{r,echo = F}
+barplot(tree$variable.importance)
+```
+
+Option B: we can try to compute mutual information to capture not linear relations using the independent features.
+
+```{r}
+
+```
 
 Nevertheless, we should be more interested in getting clickes the more cliques we get the more sales we can potentially obtain.
 
