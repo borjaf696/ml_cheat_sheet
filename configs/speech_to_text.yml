@@ -8,3 +8,8 @@ dependencies:
     - mlflow
     - tensorflow==2.0.0
     - librosa
+    - matplotlib
+    - scikit-learn
+    - scipy
+    - seaborn
+    - simpleaudio
