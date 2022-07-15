@@ -1,4 +1,5 @@
 from google.cloud import bigquery
+import os
 class BQ_access:
     def __init__(self):
         os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "/Users/temporaryadmin/.config/gcloud/legacy_credentials/borja.freire@deliveryhero.com/adc.json"

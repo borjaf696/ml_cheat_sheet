@@ -1,4 +1,4 @@
-from bq import *
+from dao.bq import *
 
 class Connector:
     def __init__(self, method = 'big_table'):
