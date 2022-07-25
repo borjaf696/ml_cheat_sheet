@@ -21,11 +21,12 @@ class BQ_access:
         if output_type == 'df':
             return self.bq_client.query(query).result().to_dataframe()
 
-    def map_query_parametric(self, file_read,  parameters = {'$1':'qa', '$2':"'2022-06-01'", '$3':"'2022-07-01'"}):
+    def map_query_parametric(self, file_read,  parameters = {'$1':"'qa'", '$2':"'2022-06-01'", '$3':"'2022-07-01'", '$4':'1000000'}):
         '''
         TODO: End
         '''
         query = self.__read_query(file_read)
         for key, val in parameters.items():
             query = query.replace(key,val)
+        print('SQL query: ',query)
         return self.execute_bq(query)
