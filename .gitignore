@@ -1,5 +1,5 @@
 *.rar
-*es*
+*.sql
 *.wav
 *.data
 *COPYING
@@ -13,3 +13,5 @@ cache/*
 *.pdf
 *.gzip
 *.gz
+*.pub
+*.fasta
