@@ -9,3 +9,7 @@
 cache/*
 *.pyc
 *.json
+*.thml
+*.pdf
+*.gzip
+*.gz
