@@ -6,7 +6,7 @@
 *.csv
 *.png
 *.log
-cache/*
+*/cache/*
 *.pyc
 *.json
 *.thml
@@ -15,3 +15,4 @@ cache/*
 *.gz
 *.pub
 *.fasta
+*/etc/*
